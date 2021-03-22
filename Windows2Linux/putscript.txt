@@ -1,0 +1,16 @@
+option batch off
+# ファイル上書きの確認
+option confirm on
+open root:wizlife@192.168.11.15
+cd /root
+# バイナリモードに変更
+option transfer binary
+put "%1%"
+
+# ファイルをd:\にダウンロード(最後の\が省けません)
+#get examplefile.txt d:\
+
+# 切断
+close
+# 終了
+exit
